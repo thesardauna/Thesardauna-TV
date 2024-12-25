@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thesardauna TV</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add any external fonts or libraries if needed -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Thesardauna TV Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#live">Watch Live</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Home) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Thesardauna TV</h1>
+            <p>Preserving Heritage, Fostering Unity in Northern Nigeria</p>
+            <button class="cta-btn">Watch Live</button>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <h2>Our Weekly Programs</h2>
+        <div class="programs-list">
+            <!-- Dynamic program listing -->
+            <div class="program-card">
+                <img src="program1.jpg" alt="Program 1">
+                <h3>Daga Kundin Tarihi</h3>
+                <a href="program-details.html">View Episodes</a>
+            </div>
+            <div class="program-card">
+                <img src="program2.jpg" alt="Program 2">
+                <h3>Sana’a Sa’a</h3>
+                <a href="program-details.html">View Episodes</a>
+            </div>
+            <!-- More programs will be added dynamically -->
+        </div>
+    </section>
+
+    <!-- Episode Details Section -->
+    <section id="episode-details" class="episode-details">
+        <h2>Episode Title</h2>
+        <div class="video-player">
+            <!-- Placeholder for video player -->
+            <video controls>
+                <source src="episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p>Description of the episode...</p>
+        <button class="cta-btn">Watch Another Episode</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Thesardauna TV</h2>
+        <p>We are dedicated to preserving the cultural heritage of Northern Nigeria and bringing high-quality, engaging content to our viewers.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Thesardauna TV. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
