@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;  /* Light background for better readability */
+    color: #333;  /* Default text color */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #009688; /* Primary color */
+    padding: 10px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #f1f1f1;  /* Slight hover effect for links */
+}
+
+/* Hero Section (Home) */
+.hero {
+    background-color: #f3f3f3;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.cta-btn {
+    background-color: #009688; /* Primary color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #00796b;  /* Darker shade of turquoise */
+}
+
+/* Programs Section */
+.programs {
+    padding: 40px 20px;
+    background-color: #eeeeee;
+}
+
+.programs-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.program-card {
+    background-color: white;
+    width: 220px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.program-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.program-card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #009688; /* Primary color */
+}
+
+.program-card a {
+    display: block;
+    margin-top: 10px;
+    color: #009688; /* Primary color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.program-card a:hover {
+    color: #00796b;  /* Darker shade of turquoise */
+}
+
+/* Episode Details Section */
+.episode-details {
+    padding: 40px 20px;
+}
+
+.episode-details .video-player {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.episode-details h2 {
+    color: #009688; /* Primary color */
+}
+
+.episode-details p {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* About Us Section */
+.about {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #009688; /* Primary color */
+}
+
+.about p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background-color: #eeeeee;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact form input,
+.contact form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    background-color: #009688; /* Primary color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact form button:hover {
+    background-color: #00796b;  /* Darker shade of turquoise */
+}
+
+/* Footer */
+footer {
+    background-color: #009688; /* Primary color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer .social-media a:hover {
+    color: #f1f1f1;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .programs-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-card {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+    }
+}
