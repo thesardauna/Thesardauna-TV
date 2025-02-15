@@ -1,220 +1,161 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
+:root {
+    --primary-color: #0020dd;
+    --secondary-color: #ffffff;
+    --accent-color: #00dd20;
+    --dark-green: #005500;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f9f9f9;  /* Light background for better readability */
-    color: #333;  /* Default text color */
+    font-family: 'Arial', sans-serif;
 }
 
-/* Header and Navigation */
-header {
-    background-color: #009688; /* Primary color */
-    padding: 10px;
-    color: white;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-nav ul li a:hover {
-    color: #f1f1f1;  /* Slight hover effect for links */
-}
-
-/* Hero Section (Home) */
-.hero {
-    background-color: #f3f3f3;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
+body {
+    background: linear-gradient(to bottom right, #00550010, #0020dd10);
     color: #333;
 }
 
-.cta-btn {
-    background-color: #009688; /* Primary color */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    border-radius: 5px;
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.cta-btn:hover {
-    background-color: #00796b;  /* Darker shade of turquoise */
-}
-
-/* Programs Section */
-.programs {
-    padding: 40px 20px;
-    background-color: #eeeeee;
-}
-
-.programs-list {
+.navbar ul {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    list-style: none;
 }
 
-.program-card {
-    background-color: white;
-    width: 220px;
-    margin: 10px;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.program-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.program-card h3 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #009688; /* Primary color */
-}
-
-.program-card a {
-    display: block;
-    margin-top: 10px;
-    color: #009688; /* Primary color */
+.navbar a {
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
 
-.program-card a:hover {
-    color: #00796b;  /* Darker shade of turquoise */
+.navbar a:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-green);
 }
 
-/* Episode Details Section */
-.episode-details {
-    padding: 40px 20px;
-}
-
-.episode-details .video-player {
-    max-width: 100%;
-    margin: 20px 0;
-}
-
-.episode-details h2 {
-    color: #009688; /* Primary color */
-}
-
-.episode-details p {
-    color: #333;
-    font-size: 1rem;
-}
-
-/* About Us Section */
-.about {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2rem;
-    color: #009688; /* Primary color */
-}
-
-.about p {
-    font-size: 1rem;
-    color: #333;
-}
-
-/* Contact Section */
-.contact {
-    padding: 40px 20px;
-    background-color: #eeeeee;
-}
-
-.contact form {
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,32,221,0.8), rgba(0,85,0,0.8)),
+                url('tv-studio-bg.jpg');
+    background-size: cover;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-}
-
-.contact form label {
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.contact form input,
-.contact form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.contact form button {
-    background-color: #009688; /* Primary color */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-size: 1.1rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.contact form button:hover {
-    background-color: #00796b;  /* Darker shade of turquoise */
-}
-
-/* Footer */
-footer {
-    background-color: #009688; /* Primary color */
-    color: white;
+    color: var(--secondary-color);
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
 }
 
-footer .social-media a {
+.video-player {
+    width: 80%;
+    height: 60vh;
+    margin: 2rem auto;
+    border: 4px solid var(--accent-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section {
+    padding: 4rem 2rem;
+}
+
+.section h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+
+.schedule-table th {
+    background-color: var(--primary-color);
     color: white;
-    text-decoration: none;
-    margin-right: 10px;
+    padding: 1.2rem;
+    text-align: left;
 }
 
-footer .social-media a:hover {
-    color: #f1f1f1;
+.schedule-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--secondary-color);
 }
 
-/* Media Queries for responsiveness */
+.schedule-table tr:nth-child(even) td {
+    background-color: #f8f8f8;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+}
+
+footer {
+    background-color: var(--dark-green);
+    color: var(--secondary-color);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.social-links a {
+    color: var(--accent-color);
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
 @media (max-width: 768px) {
-    .programs-list {
+    .navbar ul {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
-    .program-card {
-        width: 80%;
-        margin: 10px 0;
+    .navbar li {
+        margin: 0.5rem 0;
     }
 
-    .cta-btn {
-        font-size: 1rem;
+    .video-player {
+        width: 95%;
+        height: 40vh;
+    }
+
+    .section h2 {
+        font-size: 2rem;
     }
 }
