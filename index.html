@@ -3,101 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thesardauna TV</title>
+    <title>Thesardauna TV - Hausan Dai</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Add any external fonts or libraries if needed -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Thesardauna TV Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#live">Watch Live</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Hero Section (Home) -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Thesardauna TV</h1>
-            <p>Preserving Heritage, Fostering Unity in Northern Nigeria</p>
-            <button class="cta-btn">Watch Live</button>
-        </div>
-    </section>
-
-    <!-- Programs Section -->
-    <section id="programs" class="programs">
-        <h2>Our Weekly Programs</h2>
-        <div class="programs-list">
-            <!-- Dynamic program listing -->
-            <div class="program-card">
-                <img src="program1.jpg" alt="Program 1">
-                <h3>Daga Kundin Tarihi</h3>
-                <a href="program-details.html">View Episodes</a>
-            </div>
-            <div class="program-card">
-                <img src="program2.jpg" alt="Program 2">
-                <h3>Sana’a Sa’a</h3>
-                <a href="program-details.html">View Episodes</a>
-            </div>
-            <!-- More programs will be added dynamically -->
-        </div>
-    </section>
-
-    <!-- Episode Details Section -->
-    <section id="episode-details" class="episode-details">
-        <h2>Episode Title</h2>
+    <section class="hero" id="home">
+        <h1>Thesardauna TV</h1>
+        <p>Hausan Dai - Premier Hausa Content Creator</p>
         <div class="video-player">
-            <!-- Placeholder for video player -->
-            <video controls>
-                <source src="episode1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/your-live-stream-id" 
+                    frameborder="0" allowfullscreen></iframe>
         </div>
-        <p>Description of the episode...</p>
-        <button class="cta-btn">Watch Another Episode</button>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about">
-        <h2>About Thesardauna TV</h2>
-        <p>We are dedicated to preserving the cultural heritage of Northern Nigeria and bringing high-quality, engaging content to our viewers.</p>
+    <section class="section" id="schedule">
+        <h2>Programming Schedule</h2>
+        <table class="schedule-table">
+            <!-- Add schedule data here -->
+        </table>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit" class="cta-btn">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Thesardauna TV. All rights reserved.</p>
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">YouTube</a>
-            <a href="#">Twitter</a>
+    <section class="section" id="team">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <!-- Add team members here -->
         </div>
+    </section>
+
+    <footer id="contact">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2023 Thesardauna TV. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
